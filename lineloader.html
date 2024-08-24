@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Loader</title>
+</head>
+
+<style>
+    body{
+        background-color: #676179;
+        display: flex;
+        justify-content: center;
+
+    }
+    .loader{
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 0.4rem;
+        transform: rotate(0.5turn);
+        height: 5em;
+        width: auto;
+        position: absolute;
+        top: 43%;
+    }
+    .loading-bar{
+        border-radius: 5px;
+        height: 2em;
+        width: .5em;
+        background: greenyellow;
+        animation: loading 1s linear infinite;
+    }
+
+    .two{
+        animation-delay: 0.1s;
+    }
+
+    .three{
+        animation-delay: 0.2s;
+    }
+    .four{
+        animation-delay: 0.3s;
+
+    }
+    .five{
+        animation-delay: 0.4s;
+    }
+
+    @keyframes loading{
+        50%{
+            height: 5em;
+        }
+        100%{
+            height: 0.5em;
+        }
+    }
+
+</style>
+<body>
+    <div class="loader">
+        <!-- <div class="loading-bar one"></div>
+        <div class="loading-bar two"></div>
+        <div class="loading-bar three"></div>
+        <div class="loading-bar four"></div>
+        <div class="loading-bar five"></div> -->
+        <div class="loading-bar one"></div>
+        <div class="loading-bar two"></div>
+        <div class="loading-bar three"></div>
+        <div class="loading-bar four"></div>
+        <div class="loading-bar five"></div>
+        <div class="loading-bar five"></div>
+        <div class="loading-bar four"></div>
+        <div class="loading-bar three"></div>
+        <div class="loading-bar two"></div>
+        <div class="loading-bar one"></div>
+        
+    </div>
+</body>
+</html>
